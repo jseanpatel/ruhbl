@@ -7,3 +7,12 @@
 .hero {
     font-family: 'Fira Sans', sans-serif;
 }
+
+.button {
+
+}
+
+.icon {
+    display: inline-table !important;
+    margin-left: 5px;
+}

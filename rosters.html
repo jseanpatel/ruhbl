@@ -1,211 +1,265 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title> Jacob Patel </title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fredoka+One" rel="stylesheet">   
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-  </head>
-  <body>
-    <nav class="navbar is-success">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <p> RUHBL </p>
-        </a>          
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
+
+<head>
+  <meta charset="utf-8">
+  <title> Jacob Patel </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="rosters.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fredoka+One" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-success">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/index.html">
+        <p> RUHBL </p>
+      </a>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="/documentation/overview/start/">
+            About
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="/documentation/overview/start/">
+              Pictures
+            </a>
+            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+              Contact
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="/documentation/overview/start/">
+            Info
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="/rosters.html">
+              Rosters
+            </a>
+            <a class="navbar-item" href="standings.html">
+              Standings
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+              Calendar
+            </a>
+          </div>
         </div>
       </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          League Rosters
+        </h1>
+        <h2 class="subtitle">
+          This is the roster.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="card" id="shasta-card">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <p class="title is-4">Shasta High School</p>
+                  <p class="subtitle is-8">@johnsmith</p>
+                  <span class="icon">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="content transform">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" id="uprep-card">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <p class="title is-4">University Preparatory High School</p>
+                  <p class="subtitle is-8">@johnsmith</p>
+                  <span class="icon">
+                    <i class="fas fa-angle-down" aria-hidden="true" onclick=toggleClass("uprep-card")></i>
+                  </span>
+                </div>
+              </div>
+              <div class="content transform">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><abbr title="Position"></abbr></th>
+                      <th><abbr title="Name">Name</abbr></th>
+                      <th><abbr title="Year">Year</abbr></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td> Jacob Patel <strong>(C)</strong> </td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td> Charlotte Luker </td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td> Kairon Gabro </td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td> </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
     
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="/documentation/overview/start/">
-              About
-            </a>
-            <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="/documentation/overview/start/">
-                Pictures
-              </a>
-              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                Contact
-              </a>
-            </div>
-          </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="/documentation/overview/start/">
-              Info
-            </a>
-            <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                Rosters
-              </a>
-              <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-                Standings
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-                Calendar
-              </a>
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Central Valley High School</p>
+                  <p class="subtitle is-8">@johnsmith</p>
+                </div>
+              </div>
+              <div class="content transform">
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <section class="hero is-">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            Roster
-          </h1>
-          <h2 class="subtitle">
-            This is the roster.
-          </h2>
-          <span class="icon has-text-centered">
-            <i class="fas fa-caret-down"></i>
-          </span>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Enterprise High School</p>
+                  <p class="subtitle is-8">@johnsmith</p>
+                </div>
+              </div>
+              <div class="content transform">
+
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-1by1">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">Shasta High School</p>
-                    <p class="subtitle is-8">@johnsmith</p>
-                  </div>
-                </div>
-                <div class="content">
-                  
-                </div>
-              </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
             </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-1by1">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">University Preporatory School</p>
-                    <p class="subtitle is-8">@johnsmith</p>
-                  </div>
-                </div>
-                <div class="content">
-          
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">West Valley High School</p>
+                  <p class="subtitle is-8">@johnsmith</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-1by1">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">Central Valley High School</p>
-                    <p class="subtitle is-8">@johnsmith</p>
-                  </div>
-                </div>
-                <div class="content">
-          
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-1by1">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">Enterprise High School</p>
-                    <p class="subtitle is-8">@johnsmith</p>
-                  </div>
-                </div>
-                <div class="content">
-          
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-1by1">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">West Valley High School</p>
-                    <p class="subtitle is-8">@johnsmith</p>
-                  </div>
-                </div>
-                <div class="content">
-          
-                </div>
+              <div class="content transform">
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
-      </div>
-    </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get all "navbar-burger" elements
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        // Check if there are any nav burgers
-        if ($navbarBurgers.length > 0) {
-          // Add a click event on each of them
-          $navbarBurgers.forEach(function ($el) {
-            $el.addEventListener('click', function () {
-              // Get the target from the "data-target" attribute
-              var target = $el.dataset.target;
-              var $target = document.getElementById(target);
-              // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-              $el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-            });
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC
+          BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Check if there are any nav burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
           });
-        }
-      });
-    </script>
-  </body>
+        });
+      }
+    });
+
+    function toggleClass(id) {
+      var cardContent = document.getElementById(id).getElementsByClassName("content")[0];
+      var currentClass = cardContent.className;
+      if(currentClass.split(" ").indexOf("content-active") > -1){ //has class
+          newClass = currentClass.replace(new RegExp('\\b'+"content-active"+'\\b','g'),"")
+      }else{
+          newClass = currentClass + " " + "content-active";
+      }
+      cardContent.className = newClass.trim();
+    }
+  </script>
+  
+</body>
+
 </html>

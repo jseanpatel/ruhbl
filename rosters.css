@@ -1,0 +1,25 @@
+.card {
+    border-radius: 20px;
+}
+
+.card-image .image img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.content {
+    overflow: hidden;
+    height: 0px;
+}
+
+.transform {
+    -webkit-transition: all 0.5s ease;  
+    -moz-transition: all 0.5s ease;  
+    -o-transition: all 0.5s ease;  
+    -ms-transition: all 0.5s ease;  
+    transition: all 0.5s ease;
+  }
+
+.content-active {
+    overflow: none;
+    height: 15rem;
+}
