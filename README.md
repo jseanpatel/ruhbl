@@ -11,12 +11,12 @@
 
 ## Description
 
-RUHBL.org is a website to hold the necessary information for the Redding United History Bowl League. The organization is an extention of the National History Bee and Bowl competition. RUHBL encompasses five high schools in the Redding, California area.
+[RUHBL.org](https://ruhbl.org) is a website to hold the necessary information for the official Redding United History Bowl League. The organization is an extention of the National History Bee and Bowl competition. RUHBL encompasses five high schools in the Redding, California area.
 
 ## Technologies
 
-* Bulma
-* Fontawesome.com
+* [Bulma](https://bulma.io)
+* [Font Awesome 5](https://fontawesome.com)
 
 ## Acknowledgements
 
@@ -24,7 +24,7 @@ Firstly, thank you to my coach Mr. Mosher for always opening up his room and min
 
 ## Deployment
 
-This website can be reached at ruhbl.org.
+This website is static and can be deployed by simply opening index.html. This website can be reached at [ruhbl.org](https://ruhbl.org).
 
 ## License
 
