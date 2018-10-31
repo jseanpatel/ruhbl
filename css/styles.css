@@ -1,0 +1,18 @@
+.navbar-item p {
+    color: white;
+    font-size: 16pt;
+    font-family: 'Fredoka One', cursive;
+}
+
+.hero {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.button {
+
+}
+
+.icon {
+    display: inline-table !important;
+    margin-left: 5px;
+}
